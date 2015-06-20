@@ -142,7 +142,7 @@ isFinished {next} =
 -}
 length : Animation a -> Int
 length animation =
-  List.length animation.previous + 1 + List.Length animation.next
+  List.length animation.previous + 1 + List.length animation.next
 
 {-| Repeat the current frame `n` many times to simulate pausing for `n` many
 frames.
