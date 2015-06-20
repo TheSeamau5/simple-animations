@@ -154,8 +154,8 @@ stepRipple maybeRipple =
         Nothing
       else
         Just
-          { ripple | radius <- Animation.forward ripple.radius
-                   , color  <- Animation.forward ripple.color
+          { ripple | radius <- Animation.play ripple.radius
+                   , color  <- Animation.play ripple.color
           }
 
 

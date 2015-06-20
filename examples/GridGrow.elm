@@ -235,8 +235,8 @@ stepArticle : ArticlePage -> ArticlePage
 stepArticle article =
   if article.isShown
   then
-    { article | position  <- Animation.forward article.position
-              , size      <- Animation.forward article.size
+    { article | position  <- Animation.play article.position
+              , size      <- Animation.play article.size
     }
   else
     { article | position  <- Animation.back article.position

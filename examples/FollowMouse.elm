@@ -65,7 +65,7 @@ update action state =
       { state | position <- ease state.position.current position }
 
     NextFrame ->
-      { state | position <- Animation.forward state.position }
+      { state | position <- Animation.play state.position }
 
 
 view : State -> Element

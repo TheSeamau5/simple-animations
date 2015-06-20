@@ -132,8 +132,8 @@ stepCircle maybeCircle =
 
         _   ->
           Just
-            { circle | radius <- Animation.forward circle.radius
-                     , color  <- Animation.forward circle.color
+            { circle | radius <- Animation.play circle.radius
+                     , color  <- Animation.play circle.color
             }
 
 -- View --
